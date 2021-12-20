@@ -1,40 +1,54 @@
 .search {
-    display: flex;
-    justify-content: top;
-    align-items: top;
-    flex-direction: column;
-    margin-top: 10px;
-       
+  display: flex;
+  justify-content: top;
+  align-items: top;
+  flex-direction: column;
+  margin-top: 10px;
 }
 
-input{
-    width: 360px;
-    height: 44px;
-    color: rgb(5, 5, 5);
-    padding-left:10px;
-    font-size: 20px;
+input {
+  width: 360px;
+  height: 44px;
+  color: rgb(5, 5, 5);
+  padding-left: 10px;
+  font-size: 20px;
 }
-h1{
-    color: rgb(8, 8, 8);
+h1 {
+  color: rgb(8, 8, 8);
 }
 
-.buttonColor{
-    background-color: black;
-    color: red;
+.buttonColor {
+  background-color: black;
+  color: red;
 }
-.home {
+/* .home {
   width: 100%;
   height: 150vh;
   display: flex;
   justify-content: center;
-  /* align-items: left; */
+  flex-wrap: wrap;
+   align-items: left; 
   flex-direction: column;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: cover;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
+}   */
 .show {
-    display: flex;
-    width: 100%;
-  }
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 20%;
+}
+.searchBar ::placeholder {
+  font-size: 10px;
+  color: black;
+  font-weight: 900;
+}
+.showData {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-right: 10px;
+}

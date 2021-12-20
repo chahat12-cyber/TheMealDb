@@ -29,7 +29,7 @@
     margin: 0 auto;
   }
   .banner__text {
-    width: 500px;
+    /* width: 500px; */
     color: white;
   }
   .banner__text h3 {
@@ -46,4 +46,16 @@
     font-size: 25px;
     font-weight: 700;
     margin-top: 20px;
+  }
+
+  @media(max-width:629px){
+    .banner__text h1{
+      font-size: 35px;
+    }
+    .banner__text h3{
+      font-size: 10px;
+    }
+    .banner__text p{
+      font-size: 16px;
+    }
   }

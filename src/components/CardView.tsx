@@ -13,46 +13,17 @@ type MealData = {
 };
 
 function CardView(props: MealData) {
-  var settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1
-  }; 
-  const [width, setWidth] = useState(window.innerWidth);
-  
-   useEffect(() => {
-    window.addEventListener("resize", updateWidth);
-    return () => window.removeEventListener("resize", updateWidth);
-});
-
-const updateWidth= () => {
-    setWidth(window.innerWidth);
-};
-  
-  
+ 
    return (
      <div>
-       {width > 460 ?
-    <Card style={{backgroundColor: "#FFFFF"}}>
-    <div className="menuItem">
-      <div style={{ backgroundImage: `url(${props.image})` }}> </div>
-      <h1> {props.title} </h1>
-    </div>
-    </Card>
-   : null}
-    {width< 460 ?
-        <Slider {...settings}>
-        <Card style={{backgroundColor: "#FFFFF"}}>
-    <div className="menuItem">
-      <div style={{ backgroundImage: `url(${props.image})` }}> </div>
-      <h1> {props.title} </h1>
-      </div>
-      </Card>
+       <Card className="foodCard">
+         <img src={props.image}/>
+         <p>{props.title}</p>
+
+       </Card>
     
-      </Slider>
-: null}
+  
+
     </div>
        
   );

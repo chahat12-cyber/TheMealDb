@@ -36,10 +36,8 @@ function LatestMeals() {
   }
 
   return (
-    <div className="menu" style={{backgroundImage:`url(${img})`,
-
-     }}>
-      <h1 className="menuTitle">Latest Meals</h1>
+    <div className="menu">
+          <h1 className="menuTitle">Latest Meals</h1>
       <div className="menuList" >
         {mealData.map((element: any) => {
           return (
@@ -51,7 +49,7 @@ function LatestMeals() {
           );
         })}
       </div>
-    </div>
+      </div>
   );
 }
 

@@ -5,19 +5,20 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 .menu .menuTitle {
   font-family: cursive;
-  color: rgb(233, 19, 19);
+  color: rgb(36, 2, 2);
   font-size: 60px;
 }
 
 .menuList {
-  width: 70vw;
-  height: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  place-items: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 /* MENU ITEM STYLING */
